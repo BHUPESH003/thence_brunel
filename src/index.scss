@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.font-heading {
+  font-size: 56px;
+}
+.font-body {
+  font-size: 18px;
+}
+.font-subheading {
+  font-size: 40px;
+  font-weight: 600;
+}
+.font-italic {
+  font-family: "Covered By Your Grace", cursive;
+  font-style: normal;
+  letter-spacing: -0.02em;
+  font-size: 36px;
+  color: #2da950;
+}
+.button {
+  border-radius: 107px;
+  padding: 25px;
+  background-color: #1c1c1c;
+  color: #ffff;
+  font-size: 18px;
+  font-weight: 500;
+}
+.button-light {
+  border-radius: 107px;
+  padding: 25px;
+  padding: 26.11px 49.61px 26.11px 41.78px;
+  background-color: #ffff;
+  color: #1c1c1c;
+  font-size: 18px;
+  border: 1.31px solid #eaeaea;
+  font-weight: 500;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.accordion-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.accordion-header:hover {
+  background-color: #f0f0f0;
+}
+
+.accordion-header.open {
+  background-color: #f0f0f0;
+}
+
+.accordion-content {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.accordion-content.show {
+  max-height: 1000px; /* Adjust as needed */
+}
