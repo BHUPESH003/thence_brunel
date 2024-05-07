@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeadingItalic from "../../components/HeadingItalic";
 import IconButton from "../../components/IconButton";
 import HomeSlider from "../../components/HomeSlider";
 import Homebanner from "../../components/Homebanner";
 import Faq from "../../components/Faq";
+import { useSetAtom } from "jotai";
+import { navbarAtom } from "../../store";
 
 const Home = () => {
+  const setAtomNav = useSetAtom(navbarAtom);
+  useEffect(() => {
+    setAtomNav(false);
+  }, []);
   return (
     <>
       <div className="d-flex flex-column align-items-center">
@@ -21,10 +27,10 @@ const Home = () => {
         </div>
         <div className="col-md-6 d-flex flex-column justify-content-center">
           <HomeSlider />
-          <IconButton title="Explore More" link='/'/>
+          <IconButton title="Explore More" link="/" />
         </div>
       </div>
-      <Faq/>
+      <Faq />
     </>
   );
 };
