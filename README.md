@@ -4,7 +4,9 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 # This website is built using React & React Bootstrap 5 and Jotai for state management.
 ## and is deployed on the netlfy.
-
+#For running the project locally:
+1. npm install- to install all the required node modules .
+2. npm run dev- to run the application .
 
 Currently, two official plugins are available:
 
